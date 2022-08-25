@@ -1,0 +1,172 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FindClient" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_FullName" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>872,1475.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="882,1410.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm" sap:VirtualizedContainerService.HintSize="840,1318.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="806,1026" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Liste des clients'" sap:VirtualizedContainerService.HintSize="764,52" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="16, 168, 190, 64" FriendlyName="'Liste des clients'" FullSelectorArgument="&lt;wnd cls='SysListView32' /&gt;&lt;ctrl name='Liste des clients' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SysListView32' /&gt;&lt;ctrl name='Liste des clients' role='list item' automationid='' check:text='Liste des clients' /&gt;" Guid="8a996faf-ab78-4083-a6c1-37dfd755b297" ImageBase64="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" InformativeScreenshot="d566c320f9f0ca7c50b0cea786086641.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Rechercher'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="764,52" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Text="[in_FullName]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="615, 238, 353, 29" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="e39f3d43-4fe1-4fbf-8cfa-511817bad499" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWUAAAAhCAYAAAABO7p1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQMSURBVHhe7ZjLoas6DEXTFv3QTqpJG5mnjTM/Ay4Y87ElgcHkovfuGqxBjLBsOXtHzuPn56d7v98AAOCA2ZR/f38BAOBmMGUAAEdgygAAjsCUAQAcgSkDADgCUwYAcASmDADgCEz5Dl5t93i03Ut7dguf7tk8ukf7Up791/g/7QX+Ra4x5WAyvRAy2pcS+20+z67pczfPj/7cAZ9n0z2aZ/dRnt3Dq2uzmr3arIbfqOtXzkruJSfU/9F0z4/+HOBO6kw5ikrr+r5vPGNHJMW3L8o6rLzlDIbnqpML55ialDDlqroeOavK+ip7SXB3SwFIOW/KkyHfZS4x/1/vxqvz1pv61YydY2pUw9hlazxSs8r6anuZCXNjyOCbk6Y8GsutV/DQ8dxwBa3OO3SHvq7OoXPPzvJSUz5Ss8r6anuZ+Xwc/WUEoHPOlINwjnczYxfTiyaiiX652kfjF7HjlXc9zyLi+I7Sve/lrsu7Qez80veUbk2NS+ffX+NIvtft24xdswU95tqz2o/N9zm9s4zbeyn57gF44JQpBzEeugZOol29E00oFcckvmcvtsWQRkGl+RZDWMakSAfs3MuPSm1enbFOqbGGObNOzoxLcpetcfy8mqvfa7tpQFrNcuy6XntWRqw4r/X4um5nzx/AD+dN+cBfF5pQB8Q8USwiVlxpDSNRxKbmzuNq82oY13BhOqVxhWs8ejZW/gSlrtU10+a0Yo01irNV4orOH8ARJ0w5dh7FwreNTBeVFIuIs0QV3l8LUMmtmUltXkGs0W53WBrXU7jG8XPJGkfEHjVEXaexipppcxqx1hrzHyAZV3j+AI74fqe8YWT7otLjVEH3iLhZgClnRW/lFVh7DuOrTm4zLh0vXuM0Nuw1G9fQ3s/RYi4/qwE11vrhkuNizsLzB/DEKVO2BKkShKZdjw1RnRGfEWfnTqnLq2DkFXXbjEvHS9c4MxmS9mxm4/0ZPebys+rRY42bVqjd2mCVOQvPH8ATp0x5EooUpYLVDQrBGOIT71tGYl9Vtzuj2rwKqhnEmq1NpzSueI0p+z+exrwJWkzpeg6clRWr7jHG7n1/is4fwBcnTbkndiq64NZGEAUkzKhQQMK4zog3X8/qc21eldEgltixJq3oLrW4pmvyPIVrfLUH11tiWlpMbc3U96316jVq+70m57o159b5AzjjvCkHomAyRAc1i2NiLdxIELQUi9btjWN5rlWORNh57mx91XkNokmM8cM8cR256YT8O3GFawzX/3mubA6D+R0zVqnrl87KrK+okf5Xh76XnfMHcEalKQMAwJVgygAAjsCUAQAcgSkDADgCUwYAcASmDADgCEwZAMARmDIAgCMwZQAAR2DKAACOmE0ZAADu5t39AeUBfRQ6I0A9AAAAAElFTkSuQmCC" InformativeScreenshot="290b8f3074d127da5293f26c9f0bcc78.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Press ENTER" sap:VirtualizedContainerService.HintSize="764,52" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Shortcuts="[d(hk)][k(enter)][u(hk)]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Select Client" sap:VirtualizedContainerService.HintSize="764,52" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Shortcuts="[d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)] [u(hk)][d(hk)][k(enter)][u(hk)]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NCheckState Exists="{x:Null}" sap2010:Annotation.AnnotationText="Check if client is missing with blank line appear" DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="764,563.333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Timeout="2" Version="V1">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Blank line appear" sap:VirtualizedContainerService.HintSize="376,314" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Close App" sap:VirtualizedContainerService.HintSize="334,157.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="3HVsndf1UE-GjZxchk-d1Q" DesignTimeRectangle="1839, 1, 71, 44" ElementType="Button" FriendlyName="'Close App'" FullSelectorArgument="&lt;ctrl name='Fermer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fermer' role='push button' automationid='' check:text='Fermer' /&gt;" Guid="4a1b3ed2-7916-4cf4-8824-35e8cdeb642e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAvCAYAAACrKzemAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAHjSURBVGhD7dtLTsJQFMZxdoY8DIEYn7QsxDgWFJGgQ4mJEJViVGRu4ozWx4iBIxfAwA2wgGO/hkLAlvYOao/h3OSfhtwy6C/tpTRpgmSEHomn/oBWvf5ke/9gUcd4o1vjfa6O8eGUGI/HtIqNRt9kvX5S9+6Fqidd0koV0u200hHl8jVKZRt2Z9PS2fPVxVpsOPyi/YNLBwwVNn6DCdZC1zfPU7BcoT4HJlgeAQyXZVGvUHp9BiZYPuGSBNjmdpVSGWA1BMsvrGFaqUyaXqYMzi4bTLCWVD0xHLA8FnvBWh5uK4C1tXNMa5m6YC0L92HA2t2rCFZQuHEFFn4VBStEziJvl0yfClZQmn4oWGErcsBqtdtkmqbnnF+mZdFVq+U5F1UssHDgF80mDUKCYT/sj+95zUcVCyzkAgSBhd0vithgoSCIOKEQKyzkBxI3FGKHhRZhOEAhlljIBXrs9VhAIbZYyIXC1mv+r3Ow7JLpmpxZQbHEcqFcoMXPccUOyw+GAxgrrCCQuMHYYIWFiBOMBda/+m8YNxaeHqgeOJ5S4GmF11xUsVvgOSdYCgmWQoKlkGApJFgKCZZCgqUQsFAyJViBCZZCgqWQYCkkWAoJlkJzWJPXUmT4DMFSGIKlMGZYNfoB3nmNtTXWc30AAAAASUVORK5CYII=" InformativeScreenshot="d5ed0860e16ad77cc2e6f1e8842345d6.png" Reference="_YRSDGXxL0GqRhE4bM4qjA/ssDqkiwc50eH_ycd8WrPVw" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Throw Exception="[new BusinessRuleException(&quot;SAGE_CUST_NOTFOUND : Aucun client trouvé&quot;)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <uix:NClick ClickType="Single" DisplayName="Click 'Interroger'" sap:VirtualizedContainerService.HintSize="334,157.333333333333" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Version="V1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="1087, 174, 118, 31" ElementType="Button" FriendlyName="'Interroger'" FullSelectorArgument="&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Interroger' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Interroger' role='push button' automationid='' check:text='Interroger' /&gt;" Guid="9087cc43-bdfa-4307-8180-17cad30ad95d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHoAAAAjCAYAAABb2B7bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPcSURBVHhe7ZrJThtBEED9Vf4KQEDkAGGJIQYHERabRcYgESIhOzdHcEJO8gEmB74CiYPhxCKxCcQuwH9QocrT455xTzOLxyC6D08qumuq2/OmxoPtSKVSAc37R4tWBC1aEbRoRdCiFUGLVgQtWhG0aEVwLfr8/BxWciuw8H3BFfmfebi+voanpydhPU1zcSX66OgIlpaXYH5x3hPLP5bh9PRUy34DvCh6a2sLstksZLIZX2QXs7C9vQ2Pj4/C+prmIBW98W8DZjOzgZnLzMHm5iY8PDzo7n4lpKKnZ6cbxszcDL1nO3Z2OQfRSATiJcGcJjBS0VPpqYaRmk7B2dkZ3N/fC9cKJroEcX2RSJGKnpicIA4PD+mB7OTkxBdYY3JqkuK7uzvhWoFE67vBi0hFj30bI3Z2dsyYkU6n4eDgAG5ubuD29pbiVDplyRkfH4erqysz1qJfD6no5GiS2N3dNWPG6NgoFH4VoPi7CH/+/oG1tTUas+dcXFyYsVfRpXgEItEclI25iEE0V7bmcHNEvGTOs7rmHNZjc+x4HCvFLfNO45bj+LqROJS4+RrVt5VaXhRy5eoY/zoIn3u11HBAKjoxkiBQNIu9MJwcJrkYJ78m/Ym2vyDjRVq6V3AsP147oWXIRZ/rcReCuQZ/cUjGTXFC8SiRy2XiLDVq4i2iA+zVDVLRg0ODBIpmsReGvgyRXIwTwwmfom0nT3ACxKIFeQhdKLWa1TXqu1E6LuwkBzGiXBdSCZd7dYNU9MDnAeL4+BguLy/pY1CU5QW8dWMNlI1/+7p183micZFoofz6cddrEA63XINyLsqJkOXa5gLu1Q1S0b19vQR2NIsZI8kR2NvbMx/G9vf3qWv5HBSM8yx+DdF0qxMQhuhqB/oXLdonErro7p5uAkWzmNHX3weFQgHW19ehWCzC6uoq9A/01+VgR7P4TXS0jUaKbnhH2whNdOxjjEDRLPYCCka5GPd86mmuaKf3PRveRMtOtn09429RrvFAWbsIgu3VDVLRnR86CRTNYi+gYJSLcVd3V3iinbpH9ISOudyxnoUa+7TPUb79QclY3yKQHW/fb4C9ukEqur29nQj6MIY1YrGq9HBEP8NOKsKfWH7cwPcaJkYH8nWdcjmxtTz5hcnjZq9ukIru6OiAtra2hvCiaKWoirZ2b7hIRefzeWhpaQlMa2sr1ZJ+qaES1Ln2zwfCRSoavz/Gz6rxVyL87dgPWANrYU3RWu8RfAp3uj3XjYeMVDT+SADF4O0W/1cOAtZQ7ocH9vdnormdzJCK1rwftGhF0KIVQYtWBC1aEbRoJajAf1qC2qZZUwOgAAAAAElFTkSuQmCC" InformativeScreenshot="7b188ca8a29e83c569a96e662d2d66db.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1020, 385, 108, 72" FriendlyName="'gecomaes.exe Sage'" Guid="52d1063a-ee10-4d95-9599-bfe7c738e592" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAABICAYAAAATWxDtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIXSURBVHhe7ZtNboJAHEcnXXTVdNFND+AtOBAH6aZbTsNlcGvSTRMbVl00/zJ0RAIzSoJFnv5e8krFAc08PnSh2+/3JjkqGEwFg6lgMBUMpnt7L0xydCZQdMF2u134T6wZBYOhYDAUDIaCwVAwGAoGQ8FgKBiMmwpW5s5cVlgVHt8i04NVhWXOWV6Gx7OprMguO8Hngt1C0IWClZaPto0Fi42bzskgZY6P5Vkm2NRtZ57F6WD+QMisoNdquI9gVYU/sw7MCtZNUHjOBbPeodyO6T3XGnbSn+D0uHDpHFUcr48GG7y3+BnIYX6w4ST4e8VgXOrMGU1wdNyMYGF/xwMotS8OFwg2vDdEJuUqwRLbtQcU9352mUtieHxgWoh/DpZ4zeR6CDcfrLt3DRztDsL9nWFwAMFSr/P3JTsZrPkbD81mmWBhcvsf9z1TxzUDB5exEONksIbYJ1b/GpH3TGGhYA1h8vqTPHWcpyqy4/rGvDxzSTzQ31+3bXgOyPRgYhUoGAwFg6FgMBQMhoLBUDAYCgbDvb4828fnl202G6u/f+zp8UHLFS+dj+XdbrftCrluFQymgsFUMJgKBlPBYCoYTAWDqWAwFQymgsFUMJgKBlPBYCoYTAWDqWAwFQymgsFUMJgKBlPBYCoYTAWDqWAwFQymgsFUMJgKBlPBYLbB/E+OfLCpP3nR8npLV9e1eX0wsX4UDIXZLx7zhAmN/v+FAAAAAElFTkSuQmCC" InformativeScreenshot="6a1589367d320c0e37b0c932fde69aae.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Image" TargetType="ImageBased" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1080" FilePath="C:\Program Files (x86)\Sage\iGestion commerciale\gecomaes.exe" IconBase64="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" InformativeScreenshot="b4c2d35728fee14e7063f9994b4a42a1.png" Selector="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

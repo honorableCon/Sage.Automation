@@ -1,0 +1,14 @@
+﻿{
+  "Id": "r0MPSpkyfUK-bhS0f9NTWA",
+  "Reference": "_YRSDGXxL0GqRhE4bM4qjA/r0MPSpkyfUK-bhS0f9NTWA",
+  "ParentRef": "_YRSDGXxL0GqRhE4bM4qjA/RaPYE22BP0is4PkE3IWkDQ",
+  "Name": "Sage 100 Comptabilité i7",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2022-08-22T15:02:11.5151638Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-08-22T15:02:11.5151638Z"
+}

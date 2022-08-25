@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 0, 0" ContentHash="4ZAbp22idEu0GFpurNhcNg" FilePath="C:\Program Files (x86)\Sage\iGestion commerciale\gecomaes.exe" Reference="_YRSDGXxL0GqRhE4bM4qjA/aQH_GMhsoUGKYAN2Ga8G9g" Selector="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0ZpAhxE0xJU2FYERcu-yaeA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="342df87cc5bb3fbb26c7307ec35a2dc2.png" xmlns="">0_K1G2EuhukK82zt79jrguA</imageRef>
+</TargetApp>

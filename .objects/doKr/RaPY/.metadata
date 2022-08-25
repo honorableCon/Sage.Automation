@@ -1,0 +1,12 @@
+﻿{
+  "Id": "RaPYE22BP0is4PkE3IWkDQ",
+  "Reference": "_YRSDGXxL0GqRhE4bM4qjA/RaPYE22BP0is4PkE3IWkDQ",
+  "ParentRef": "_YRSDGXxL0GqRhE4bM4qjA/doKr8FWH9kK2lz6eMbCpZg",
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Created": "2022-08-22T15:02:07.7130327Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-08-22T15:02:07.7130327Z"
+}

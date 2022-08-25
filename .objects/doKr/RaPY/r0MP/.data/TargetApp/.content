@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 1920, 1080" ContentHash="0uJ-W9jpcEa6PWJ287XEjg" FilePath="C:\Program Files (x86)\Sage\iComptabilité\maestria.exe" Selector="&lt;wnd app='maestria.exe' cls='Compta' title='Sage 100 Comptabilité i7'/&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">019nl1-EGpkSjN3IrOOEZMQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="9b57ebe53f15a5da1dfbd9302abce6d3.png" xmlns="">0jwEtLwhYsEmfsuFSx4H97A</imageRef>
+</TargetApp>

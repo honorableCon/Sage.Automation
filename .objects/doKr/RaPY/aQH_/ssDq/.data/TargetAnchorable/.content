@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="3HVsndf1UE-GjZxchk-d1Q" DesignTimeRectangle="1839, 1, 71, 44" ElementType="Button" FriendlyName="'Fermer'" FullSelectorArgument="&lt;ctrl name='Fermer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fermer' role='push button' automationid='' check:text='Fermer' /&gt;" Guid="4a1b3ed2-7916-4cf4-8824-35e8cdeb642e" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0Oq4S4QoPWEuNSnE5ywQy-Q</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="d5ed0860e16ad77cc2e6f1e8842345d6.png" xmlns="">0JJuPuYK-6U-ZIqiS7ep2ew</imageRef>
+</TargetAnchorable>

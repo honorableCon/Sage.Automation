@@ -1,0 +1,14 @@
+﻿{
+  "Id": "ssDqkiwc50eH_ycd8WrPVw",
+  "Reference": "_YRSDGXxL0GqRhE4bM4qjA/ssDqkiwc50eH_ycd8WrPVw",
+  "ParentRef": "_YRSDGXxL0GqRhE4bM4qjA/aQH_GMhsoUGKYAN2Ga8G9g",
+  "Name": "Close App",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2022-08-24T15:48:54.9023785Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-08-24T15:48:54.9023785Z"
+}
