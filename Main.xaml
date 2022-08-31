@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>570,2057.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>569.333333333333,1044.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="41">
@@ -88,34 +88,34 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="476,806" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="476,980" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Sage 100 Gestion commerciale i7" sap:VirtualizedContainerService.HintSize="434,714" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Sage 100 Gestion commerciale i7" sap:VirtualizedContainerService.HintSize="664,1405.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="376,421.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence sap:VirtualizedContainerService.HintSize="630,1110.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check If App is in the correct state" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,326.666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17" Version="V1">
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check If App is in the correct state" sap:VirtualizedContainerService.HintSize="588,1016" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17" Version="V1">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,68" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="284,796" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,974.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,701.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="out_dt_Transactions_str" />
                     </Sequence.Variables>
@@ -125,51 +125,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Fichier'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="11, 45, 72, 29" FriendlyName="'Fichier'" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Fichier' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Fichier' role='menu item' automationid='' check:text='Fichier' /&gt;" Guid="b409d6b6-86ca-4b3d-8017-945669fdda89" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAhCAYAAABz/U2vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFzSURBVGhD7ZVbsoMgDEDvhl0H22APflSW4S78dHQBuUGRYoQ2wY7TR85MOkUlmhPEv7Ztwcc8zxqMiMIUHipMiAoTosKEqDAhKkyIChOiwoSoMCFvJay3DTTGwRDG70i9sN5C02CBmbC9v2AAZ3AsEMATJs/7Sk4KM+CKT63C9jwVJucHXkkVxochLC8gvFLpvrduevfrBwcmc34jm5fOIefjnG3vxf81XCtsK2onoAebCqPFhgJNcqNS3vs1oSnJfWJuIl/KSWHhIdJICqGFHQolrEXRJhSKj3mO5xdIQ9fcFttzjgtXGK4kFPqowSWh9PhuHFbXIS85Xsot5TphpcISzgjLrnYMFUbHjLyezxOGv9m9JqFKGCOv5wOFIcscWhz5SoqFISHv3hnmfTSnkmuFLaybv2SfeSrMszUjk9fzMmFd58CHwmMRdrt1YciDdjIX30qVsF9GhQlRYUJUmJAobJomDUZEYeM4ajBCX0kRAP+YFH+/FrtKsQAAAABJRU5ErkJggg==" InformativeScreenshot="4ab3a2ee7359a99cef7f9cd5657b1c94.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                      </uix:NClick.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Ouvrir... Ctrl+O'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="3, 38, 478, 35" FriendlyName="'Ouvrir... Ctrl+O'" FullSelectorArgument="&lt;ctrl name='Fichier' role='popup menu' /&gt;&lt;ctrl automationid='112' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fichier' role='popup menu' /&gt;&lt;ctrl automationid='112' role='menu item' check:text='Ouvrir...&amp;#x9;Ctrl+O' /&gt;" Guid="ac5beca7-611a-4fd5-ae3f-e195d2c3d978" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeIAAAAnCAYAAADTu0sQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMLSURBVHhe7dzRkaowFAZgy6Igy7EZmrEDi/CJKxi9Eogg63pw+R6+mV0SccecOX9g1d3pdGrO5zMA8GFtBgtiAAgiiAEgkCAGgECCGAACCWIACCSIASCQIAaAQIIYAAIJYgAIJIgBIJAgBoBAghgAAgliAMLV+12zqw7NcWTsr9tcEHeLvcvs69G5v+/YHKrL82+0+IDvdTxUw166q5rDcXz+lHcG8br6/LTtBPHx0FTdguybujeWwvAHBbScIAa+Td3sR3tpG4CPffQ6b1/355S8JYhX2eenbSSIU+E82RFdd1DDwgLgZrqX3qVQ/FwQf2+f30QQX2+hTL3410WsDseRMQDm9dLkzUHcjj/rz9/c5zcQxOmWxIwdXL8QSo/rHy8XT/+2831evb8Uy8jx9LjSvP65AT7txV7a9q9Hec+c6IW5drwcoEv7/DpsIIjn74D6O6p5QXxOxTTY9WW7wXthZufLi6I0DyBU6mmzryYLV8Rze2GuHS8/99I+vw5/P4hfuD2yKIgL87pzDQJ2uPh58ZXmAYR68Vbz8yCe7oW5drwYtIv7/DpsJoh/7Yr4Yriww91Zqcjy41PFCBDinUE8oxfeHt9dPY96eAf04j6/Dn8/iFMoDgN1qF8I84N4UHDd7er+Qs8tvtI8gFgvvtHpp0GcacfLz720z6/DBoI4vfCTO6C8yF4I4ovHxe1+fjL+7HhpHkC0l/rTR4M4Pf7lPr8OmwjiObulsUUcL4zCubqr4Ko51G3xDT80Xiqy/HhpHkC4F24BfzqIl/b5NdhIEF+kohgudLrCHfvGlcE7om9zxxb7OlZV/Tdp3cwtvvF56Xnvx6d+B/gl2ceOHsfGvlkrD8+5vTDXjk9uAJb0+RXYThAn3WK3C/Xg2eJe/7H/f+6+Tgs6suu6zc13gK25xTc+TxADa3ILtlx2tXkL7VbqmXN74U905+r9XTNCPNDmghgA1kQQA0AgQQwAgQQxAAQSxAAQSBADQCBBDACBBDEABBLEABBIEANAIEEMAIEEMQAEOp1OzT9wRvAclmvFQwAAAABJRU5ErkJggg==" InformativeScreenshot="3084c204078281367444a25b38dcd8c0.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                      </uix:NClick.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'SenyoneCommercial.gcm'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="164, 162, 1036, 29" FriendlyName="'SenyoneCommercial.gcm'" FullSelectorArgument="&lt;wnd ctrlid='1' title='FolderView' /&gt;&lt;ctrl name='Affichage des dossiers' role='list' /&gt;&lt;ctrl name='SenyoneCommercial.gcm' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='FolderView' /&gt;&lt;ctrl name='Affichage des dossiers' role='list' /&gt;&lt;ctrl name='SenyoneCommercial.gcm' role='list item' automationid='' check:text='SenyoneCommercial.gcm' /&gt;" Guid="4313a64c-fa06-4e80-bb97-86596c504e2b" ImageBase64="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" InformativeScreenshot="c3a5dcd89cd06d7e8be45b7ddc338f2c.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='#32770' title='Ouvrir le fichier commercial' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                      </uix:NClick.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Ouvrir'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2a45215f-b00a-4aaa-81f9-6bbcdfb74c17">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="722, 590, 113, 35" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Ouvrir' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Ouvrir' check:text='unchecked' /&gt;" Guid="63515395-c4a9-48c5-9488-4646f40b52f0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAnCAYAAAAxQgdAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIhSURBVHhe7dsxbtswGIZhDukFchsOXXoXbkHmAJ16As0degyuRZFsAbIlAUL0BC0KaMkQoMZffjLlkBJreTBkkv6Gd5BE2YEeUg4MS/V9L6ytiNpgRG2wGeqd+y2fvv6UD5+fRN08skKDD5zgNTVMUDHg8suzfLv/I69vf2Wz2bBCgw+c4DWFTVAhj4G5F2FlBi+4xY4JKpY0V2hdwQtusWOCint17kRWdnBLHJMNolYZURuMqA1G1AYjaoNVieqsEa2VKBXSWox12bFHzb+vUlo6lzlWUNWhWqOHCxsjOtuJ9rja2GTsuVYX6r6V4gJst8KKLbyKUJ10uOXuWY3W4FbciRu2rZgMsuuw0o3Y/0yC7XE/ccLqN9a/znCr9+fEkyqcnxyPXueU1YN6wErcgQwreQF1nCS7SYCifeH9lMYECMczqMnxQqoHdbigWBmZY2PJmCXU6STwxRNntxLfz82h7v17TtRZo85gltCIeuTCRTze7Rfb6ed08plM1DU68j9K474BCtvb8Tskoq5UfFGnx2Yr+UDUEdOMuGE/Udcr/+WD2YJOVvG4ckcogGJcihrGYX98PlHX7fCvCf0te5gEGOdBOyt2tlJ9A9YEiKispIjaYERtMKI2GFEbjKgNRtQG24vKX+jX1+Iv9PksTX0tPkvDp97qCT5wWnzqDd2+/JKP3YNcXP8QdfWdFRp84ASvqeEMldUfURuMqM3Vyz9lVZ8s2wxlsAAAAABJRU5ErkJggg==" InformativeScreenshot="db7fe137c9ccffec42c61842ebbb8aba.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='#32770' title='Ouvrir le fichier commercial' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                      </uix:NClick.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Login.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke OpenSageFile workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="OpenSageFile.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
@@ -180,7 +136,18 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FindClient workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="FindClient.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Login.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokeWorkflowFile.Arguments>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InvokeWorkflowFile>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FindClient workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="FindClient.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="in_FullName">[in_FullName]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
@@ -191,7 +158,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FindTransactions workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="FindTransactions.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FindTransactions workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="FindTransactions.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
@@ -202,11 +169,9 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ExtractTransactions workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ExtractTransactions.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ExtractTransactions workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ExtractTransactions.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_Transactions">
-                          <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="out_dt_Transactions" />
-                        </OutArgument>
+                        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_Transactions">[out_dt_Transactions]</OutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -215,7 +180,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeWorkflowFile>
-                    <ui:OutputDataTable DataTable="[out_dt_Transactions]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[out_dt_Transactions_str]">
+                    <ui:OutputDataTable DataTable="[out_dt_Transactions]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[out_dt_Transactions_str]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -238,7 +203,7 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence sap2010:Annotation.AnnotationText="Envoie une capture d’écran par mail aux administrateurs RPA avec le code et le message d’erreur &#xD;&#xA;&#xD;&#xA;+ Le processus se termine en erreur &#xD;&#xA;&#xD;&#xA;+ Renvoi d’un message d’erreur au portail : &#xD;&#xA;" DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,272" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence sap2010:Annotation.AnnotationText="Envoie une capture d’écran par mail aux administrateurs RPA avec le code et le message d’erreur &#xA;&#xA;+ Le processus se termine en erreur &#xA;&#xA;+ Renvoi d’un message d’erreur au portail : &#xA;" DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,278.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
