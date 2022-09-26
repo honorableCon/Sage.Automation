@@ -1,8 +1,8 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="FindClient" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="FindClient" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Path" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>662,1006</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>891.333333333333,911.333333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -23,18 +23,6 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Data</x:String>
-      <x:String>System.Diagnostics</x:String>
-      <x:String>System.Linq</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
-      <x:String>System.IO</x:String>
-      <x:String>System.Net.Mail</x:String>
-      <x:String>Microsoft.VisualBasic</x:String>
-      <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
@@ -71,58 +59,57 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="672,941.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence DisplayName="Find Transactions sequences" sap:VirtualizedContainerService.HintSize="630,846.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm" sap:VirtualizedContainerService.HintSize="630,849.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm" sap:VirtualizedContainerService.HintSize="588,754.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,554.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState Exists="{x:Null}" sap2010:Annotation.AnnotationText="Check if transactions missing with blank line appear" DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="554,460" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Version="V1">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Blank line appear" sap:VirtualizedContainerService.HintSize="250,209.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <uix:NCheckState Exists="{x:Null}" sap2010:Annotation.AnnotationText="Check if transactions missing with blank line appear" DisplayName="Check Transactions" sap:VirtualizedContainerService.HintSize="638,460" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b" Version="V1">
+            <uix:NCheckState.IfExists>
+              <Sequence DisplayName="Transaction not found" sap:VirtualizedContainerService.HintSize="250,209.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ClickType="Single" DisplayName="Close App" sap:VirtualizedContainerService.HintSize="208,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="3HVsndf1UE-GjZxchk-d1Q" DesignTimeRectangle="1839, 1, 71, 44" ElementType="Button" FriendlyName="'Close App'" FullSelectorArgument="&lt;ctrl name='Fermer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fermer' role='push button' automationid='' check:text='Fermer' /&gt;" Guid="4a1b3ed2-7916-4cf4-8824-35e8cdeb642e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAvCAYAAACrKzemAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAHjSURBVGhD7dtLTsJQFMZxdoY8DIEYn7QsxDgWFJGgQ4mJEJViVGRu4ozWx4iBIxfAwA2wgGO/hkLAlvYOao/h3OSfhtwy6C/tpTRpgmSEHomn/oBWvf5ke/9gUcd4o1vjfa6O8eGUGI/HtIqNRt9kvX5S9+6Fqidd0koV0u200hHl8jVKZRt2Z9PS2fPVxVpsOPyi/YNLBwwVNn6DCdZC1zfPU7BcoT4HJlgeAQyXZVGvUHp9BiZYPuGSBNjmdpVSGWA1BMsvrGFaqUyaXqYMzi4bTLCWVD0xHLA8FnvBWh5uK4C1tXNMa5m6YC0L92HA2t2rCFZQuHEFFn4VBStEziJvl0yfClZQmn4oWGErcsBqtdtkmqbnnF+mZdFVq+U5F1UssHDgF80mDUKCYT/sj+95zUcVCyzkAgSBhd0vithgoSCIOKEQKyzkBxI3FGKHhRZhOEAhlljIBXrs9VhAIbZYyIXC1mv+r3Ow7JLpmpxZQbHEcqFcoMXPccUOyw+GAxgrrCCQuMHYYIWFiBOMBda/+m8YNxaeHqgeOJ5S4GmF11xUsVvgOSdYCgmWQoKlkGApJFgKCZZCgqUQsFAyJViBCZZCgqWQYCkkWAoJlkJzWJPXUmT4DMFSGIKlMGZYNfoB3nmNtTXWc30AAAAASUVORK5CYII=" InformativeScreenshot="d5ed0860e16ad77cc2e6f1e8842345d6.png" Reference="_YRSDGXxL0GqRhE4bM4qjA/ssDqkiwc50eH_ycd8WrPVw" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                  </uix:NClick.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ClickType="Single" DisplayName="Close App" sap:VirtualizedContainerService.HintSize="208,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9e848561-fa3e-4e18-90bf-fe1e91e9bc8b">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable ContentHash="3HVsndf1UE-GjZxchk-d1Q" DesignTimeRectangle="1839, 1, 71, 44" ElementType="Button" FriendlyName="'Close App'" FullSelectorArgument="&lt;ctrl name='Fermer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fermer' role='push button' automationid='' check:text='Fermer' /&gt;" Guid="4a1b3ed2-7916-4cf4-8824-35e8cdeb642e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAvCAYAAACrKzemAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAHjSURBVGhD7dtLTsJQFMZxdoY8DIEYn7QsxDgWFJGgQ4mJEJViVGRu4ozWx4iBIxfAwA2wgGO/hkLAlvYOao/h3OSfhtwy6C/tpTRpgmSEHomn/oBWvf5ke/9gUcd4o1vjfa6O8eGUGI/HtIqNRt9kvX5S9+6Fqidd0koV0u200hHl8jVKZRt2Z9PS2fPVxVpsOPyi/YNLBwwVNn6DCdZC1zfPU7BcoT4HJlgeAQyXZVGvUHp9BiZYPuGSBNjmdpVSGWA1BMsvrGFaqUyaXqYMzi4bTLCWVD0xHLA8FnvBWh5uK4C1tXNMa5m6YC0L92HA2t2rCFZQuHEFFn4VBStEziJvl0yfClZQmn4oWGErcsBqtdtkmqbnnF+mZdFVq+U5F1UssHDgF80mDUKCYT/sj+95zUcVCyzkAgSBhd0vithgoSCIOKEQKyzkBxI3FGKHhRZhOEAhlljIBXrs9VhAIbZYyIXC1mv+r3Ow7JLpmpxZQbHEcqFcoMXPccUOyw+GAxgrrCCQuMHYYIWFiBOMBda/+m8YNxaeHqgeOJ5S4GmF11xUsVvgOSdYCgmWQoKlkGApJFgKCZZCgqUQsFAyJViBCZZCgqWQYCkkWAoJlkJzWJPXUmT4DMFSGIKlMGZYNfoB3nmNtTXWc30AAAAASUVORK5CYII=" InformativeScreenshot="d5ed0860e16ad77cc2e6f1e8842345d6.png" Reference="_YRSDGXxL0GqRhE4bM4qjA/ssDqkiwc50eH_ycd8WrPVw" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <Throw Exception="[new BusinessRuleException(&quot;SAGE_NOTRX : Aucune transaction trouvée dans Sage pour ce client&quot;)]" sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="678, 267, 127, 91" FriendlyName="'gecomaes.exe Sage'" Guid="22f125b6-adb5-4848-ba5a-10e17a7729f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH8AAABbCAYAAABagFozAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAM7SURBVHhe7ZxLrqMwEEVZFwtiPawmmyHTrKBHPWi5bVwm/pT9HEKeAvce6UpPxIZyHQz0pAej8Hg85C9yZSgfGMoHhvKBoXxgKB8YygeG8oGhfGD2yV9mMw6DGZSM8yKD2twmO36cTd9ox2Lm8dU5v8m311fyhvzRlJ5vZpKbYLrJIY3btKNJ39Rcv850jfDyPeuurv7uGlefewrkyde8wU/AR+RvTwCtO8tymp1RhfLbu9fv/sneBhHStO0bQXlE+nlRog7r3wnPV42Pq8sfi78/trlZDeU3ijy+ozFFDfFv0e96fdqcrC+W/vqO42Pyl3lMFymLei5Gmrw1VntnWokt+aFR0Zh1jtK4TUA833172GPp9ClreHkjhesm8yylfKklOSbjsv5113cgH5YfxuSihXVxYYxvVGuheXPLZgvFjSZji5ordWUU1+mUX61Pue479e3ld3Z+pVnpcVlo47xpM5UduVH+VhOhHw+1RInHdMlv1edOkT4ZX6vvGD77zg9FS7OSZkaJm7jOC79l3e1v7n754frNuQfIt4Ptda4oX5qzLbzSrCbhhsnFdDV3p/wuqZaucW35F9358shMCt757kq+CfJGaNcR5EPpGPnKdTpvkrq4sh9d9R3MsfKlKWqx6per3R3bWPt31s0fmynnTG6qUIPNy/JltxZS3LFkrr6ri2tU+uHPGf1LyNJX37G8Id8tIE/7O8CupJjz7LM0Po7WtLwReS3r76Wc7uZm53PnUOfGa5FF6NeQXR6ds6sOoXb8CPbJ/3q8/OxBQjKuKX/dlT88hci55bsv5vy9Gx7HxXFScO6dr357cMf3ctF3PumB8oGhfGAoH5jhz99/Js/9fi+OMdcL5QOH8oFD+cChfOBQPnAoHziUDxzKBw7lA4fygUP5wKF84FA+cCgfOJQPHMoHDuUDh/KBQ/nAoXzgUD5wKB84lA8cygcO5QOH8oFD+cChfOBQPnAoHziUDxz1P2dw8sn1oXxgKB8YygeG8oGhfGAoHxjKB4bygaF8YCgfGMoHhvKBoXxgKB8YygeG8oGhfGAoHxjKB4bygaF8YCgfGMoHhvKBoXxgKB8YygeG8mEx5j9cV9VDWyMBzAAAAABJRU5ErkJggg==" InformativeScreenshot="4b0d9d4af1d699699ec4cd1d9ae6670a.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Image" TargetType="ImageBased" />
-              </uix:NCheckState.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NCheckState>
-          </Sequence>
+                </uix:NClick>
+                <Throw DisplayName="Throw SAGE_NOTRX" Exception="[new BusinessRuleException(&quot;SAGE_NOTRX : Aucune transaction trouvée dans Sage pour ce client&quot;)]" sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
+              </Sequence>
+            </uix:NCheckState.IfExists>
+            <uix:NCheckState.IfNotExists>
+              <ui:LogMessage DisplayName="Log Transactions" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Transactions founds&quot;]" />
+            </uix:NCheckState.IfNotExists>
+            <uix:NCheckState.Target>
+              <uix:TargetAnchorable DesignTimeRectangle="678, 267, 127, 91" FriendlyName="'gecomaes.exe Sage'" Guid="22f125b6-adb5-4848-ba5a-10e17a7729f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH8AAABbCAYAAABagFozAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAM7SURBVHhe7ZxLrqMwEEVZFwtiPawmmyHTrKBHPWi5bVwm/pT9HEKeAvce6UpPxIZyHQz0pAej8Hg85C9yZSgfGMoHhvKBoXxgKB8YygeG8oGhfGD2yV9mMw6DGZSM8yKD2twmO36cTd9ox2Lm8dU5v8m311fyhvzRlJ5vZpKbYLrJIY3btKNJ39Rcv850jfDyPeuurv7uGlefewrkyde8wU/AR+RvTwCtO8tymp1RhfLbu9fv/sneBhHStO0bQXlE+nlRog7r3wnPV42Pq8sfi78/trlZDeU3ijy+ozFFDfFv0e96fdqcrC+W/vqO42Pyl3lMFymLei5Gmrw1VntnWokt+aFR0Zh1jtK4TUA833172GPp9ClreHkjhesm8yylfKklOSbjsv5113cgH5YfxuSihXVxYYxvVGuheXPLZgvFjSZji5ordWUU1+mUX61Pue479e3ld3Z+pVnpcVlo47xpM5UduVH+VhOhHw+1RInHdMlv1edOkT4ZX6vvGD77zg9FS7OSZkaJm7jOC79l3e1v7n754frNuQfIt4Ptda4oX5qzLbzSrCbhhsnFdDV3p/wuqZaucW35F9358shMCt757kq+CfJGaNcR5EPpGPnKdTpvkrq4sh9d9R3MsfKlKWqx6per3R3bWPt31s0fmynnTG6qUIPNy/JltxZS3LFkrr6ri2tU+uHPGf1LyNJX37G8Id8tIE/7O8CupJjz7LM0Po7WtLwReS3r76Wc7uZm53PnUOfGa5FF6NeQXR6ds6sOoXb8CPbJ/3q8/OxBQjKuKX/dlT88hci55bsv5vy9Gx7HxXFScO6dr357cMf3ctF3PumB8oGhfGAoH5jhz99/Js/9fi+OMdcL5QOH8oFD+cChfOBQPnAoHziUDxzKBw7lA4fygUP5wKF84FA+cCgfOJQPHMoHDuUDh/KBQ/nAoXzgUD5wKB84lA8cygcO5QOH8oFD+cChfOBQPnAoHziUDxz1P2dw8sn1oXxgKB8YygeG8oGhfGAoHxjKB4bygaF8YCgfGMoHhvKBoXxgKB8YygeG8oGhfGAoHxjKB4bygaF8YCgfGMoHhvKBoXxgKB8YygeG8mEx5j9cV9VDWyMBzAAAAABJRU5ErkJggg==" InformativeScreenshot="4b0d9d4af1d699699ec4cd1d9ae6670a.png" ScopeSelectorArgument="&lt;wnd app='gecomaes.exe' cls='GeCoMaes' title='Sage 100 Gestion commerciale i7 - SenyoneCommercial.gcm' /&gt;" SearchSteps="Image" TargetType="ImageBased" />
+            </uix:NCheckState.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NCheckState>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
